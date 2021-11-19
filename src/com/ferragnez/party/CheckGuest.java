@@ -11,13 +11,13 @@ public class CheckGuest {
 						"Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 		
 		String name;
-		System.out.println("Inserire il proprio nome: ");
-		name = input.next();
+		System.out.print("Inserire il proprio nome: ");
+		name = input.nextLine();
 		boolean valid = false;
 		
 //		for (int i = 0; i < invitati.length; i++) {
 //			if (invitati[i].equalsIgnoreCase(name)) {
-//				System.out.println("Benvenuto " + invitati[i] + "!");
+//				System.out.println("Ciao " + invitati[i] + "!");
 //				valid = true;
 //				break;
 //			}
@@ -25,7 +25,7 @@ public class CheckGuest {
 		int i = 0;
 		while (!valid && i < invitati.length) {
 			if (invitati[i].equalsIgnoreCase(name)) {
-				System.out.println("Benvenuto " + invitati[i] + "!");
+				System.out.println("Ciao " + invitati[i] + "!");
 				valid = true;
 			} else {
 				i++;
